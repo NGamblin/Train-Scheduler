@@ -6,3 +6,14 @@ body{
     padding-left: 3%;
     padding-right:3%;
 }
+
+form{
+    margin-top: 30px;
+/* }
+#override-bs label{
+    padding-left:200px;
+}
+
+#override-bs #addTrain{
+    margin-left: 340px; */
+}

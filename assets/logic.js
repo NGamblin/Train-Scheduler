@@ -23,13 +23,13 @@ $("#addTrain").on("click", function(event) {
 
   // store user input
   var routeName = $("#route").val().trim();
-  var endDest = $("#endDestination").val().trim();
+  var endDestination = $("#endDestination").val().trim();
   var firstRun = $("#firstRun").val().trim();
   var frequency = $("#frequency").val().trim();
 
   var newTrain = {
     routeName: routeName,
-    endDest: endDest,
+    endDestination: endDestination,
     firstRun: firstRun,
     frequency: frequency
   };
@@ -66,8 +66,10 @@ database.ref().on("child_added", function(childSnapshot) {
   var newRow = $("<tr>").append(
     $("<td>").text(routeName),
     $("<td>").text(endDestination),
-    $("<td>").text(firstRun),
     $("<td>").text(frequency),
+    // $("<td>").text(),
+    // $("<td>").text(),
+
  
   );
 
